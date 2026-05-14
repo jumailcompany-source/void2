@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Modern Login Page | Frontend Developer</title>
+</head>
+ 
+<body>
+ 
+    <div class="container" id="container">
+        <!-- Sign Up Form -->
+        <div class="form-container sign-up">
+            <form id="signupForm" novalidate>
+                <h1>Create Account</h1>
+                <div class="social-icons">
+                    <a href="javascript:void(0)" class="icon" title="Sign up with Google">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </a>
+                    <a href="javascript:void(0)" class="icon" title="Sign up with Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="javascript:void(0)" class="icon" title="Sign up with GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="javascript:void(0)" class="icon" title="Sign up with LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <span>or use your email for registration</span>
+                
+                <div class="form-group">
+                    <input type="text" id="signupName" name="name" placeholder="Full Name" required>
+                    <span class="error-message" id="nameError"></span>
+                </div>
+ 
+                <div class="form-group">
+                    <input type="email" id="signupEmail" name="email" placeholder="Email Address" required>
+                    <span class="error-message" id="signupEmailError"></span>
+                </div>
+ 
+                <div class="form-group">
+                    <input type="password" id="signupPassword" name="password" placeholder="Password (min 6 characters)" required>
+                    <span class="error-message" id="signupPasswordError"></span>
+                </div>
+ 
+                <div class="form-group">
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
+                    <span class="error-message" id="confirmPasswordError"></span>
+                </div>
+ 
+                <button type="submit" class="btn-primary">Sign Up</button>
+                <div class="success-message" id="signupSuccess"></div>
+            </form>
+        </div>
+ 
+        <!-- Sign In Form -->
+        <div class="form-container sign-in">
+            <form id="signinForm" novalidate>
+                <h1>Sign In</h1>
+                <div class="social-icons">
+                    <a href="javascript:void(0)" class="icon" title="Sign in with Google">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </a>
+                    <a href="javascript:void(0)" class="icon" title="Sign in with Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="javascript:void(0)" class="icon" title="Sign in with GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="javascript:void(0)" class="icon" title="Sign in with LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <span>or use your email and password</span>
+ 
+                <div class="form-group">
+                    <input type="email" id="signinEmail" name="email" placeholder="Email Address" required>
+                    <span class="error-message" id="signinEmailError"></span>
+                </div>
+ 
+                <div class="form-group">
+                    <input type="password" id="signinPassword" name="password" placeholder="Password" required>
+                    <span class="error-message" id="signinPasswordError"></span>
+                </div>
+ 
+                <a href="javascript:void(0)" class="forgot-password">Forgot Your Password?</a>
+                <button type="submit" class="btn-primary">Sign In</button>
+                <div class="success-message" id="signinSuccess"></div>
+            </form>
+        </div>
+ 
+        <!-- Toggle Panel -->
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your personal details to use all of site features</p>
+                    <button type="button" class="btn-secondary" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Register with your personal details to use all of site features</p>
+                    <button type="button" class="btn-secondary" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <script src="script.js"></script>
+</body>
+ 
+</html>
